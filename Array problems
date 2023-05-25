@@ -17,3 +17,25 @@ if(place===0){
 }else{
     console.log(`index:${index}`)
 }
+
+
+//Most frequent element in an array
+//https://www.geeksforgeeks.org/frequent-element-array/
+
+const a=[10, 20, 10]
+let max_count=0;
+let max_time_visible_no;
+for (let i=0;i<a.length;i++){
+    let count = 0; 
+    for (let j=0;j<a.length;j++){
+        if(a[i]===a[j]){
+            count++;
+           
+        }
+        if(count>max_count){
+            max_time_visible_no=a[i]
+            
+        }
+    }
+}
+console.log(`max_time_visible_no:${max_time_visible_no}`)
